@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ROS 2 WebSocket Interface</title>
+</head>
+<body>
+    <h1>Send Commands to ROS 2</h1>
+    <input type="text" id="command" placeholder="Enter command">
+    <button onclick="sendCommand()">Send</button>
+
+    <script>
+        const ws = new WebSocket('ws://localhost:8080');
+
+        ws.onopen = () => {
+            console.log('Connected to WebSocket server');
+        };
+
+        ws.onmessage = (event) => {
+            console.log(`Received: ${event.data}`);
+        };
+
+        function sendCommand() {
+            const command = document.getElementById('command').value;
+            ws.send(command);
+            console.log(`Sent: ${command}`);
+        }
+    </script>
+</body>
+</html>
