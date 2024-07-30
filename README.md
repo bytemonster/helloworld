@@ -22,13 +22,13 @@
 
 # About this repository
 # Intro and general consepts
-  The projects in the **NAME HERE** repository are individual, yet they share some similarities. The unique physical setup with a tablet handling the **add tablet name** collecting user input via a web application, an independent robot (arduino, Pi etc) executing the commands requiers a mediator. A computer which recieves user imput from the tablet and informs the robot what to do. In this tutorial we will use ROS2  and websocket to achieve this.
+  The projects in the abilitytechlab repository are individual, yet they share some similarities. The unique physical setup with a tablet handling the mytobii collecting user input via a web application, an independent robot (arduino, Pi etc) executing the commands requiers a mediator. A computer which recieves user imput from the tablet and informs the robot what to do. In this tutorial we will use ROS2  and websocket to achieve this.
 ## Webservers/websocket
   A webserver is responsible to serve content like like web pages, to users "clients" over the internet. Browsers send requests to a webserver adn the server finds the requested content and replies to the client. Typically, a webserver processes individual requests from a browser, sending back responses each time, and then the connection closes. This works well for static content, for example a website, but is less efficient for interactive applications where information changes frequently. Like for example controlling a robot.
   
   For these types of applications we use a WebSocket. A WebSocket allows a server to maintain a continuous, real-time, two-way communication with it's client. Communication can be lean and fast which is very beneficial in our case.
 
-  The way that the **add tablet name** works is by using the **name here** as a mouse and allowing the user to focus their eyes in different areas on the screen to make a choice. The browser percives this action as a simple mouse "hoover" over a block or button. since the **add name** is not very persise it is adviced to make these buttons oversized and keep the options limited. For example "left" "right" "shoot" could be establiched in this way.
+  The way that the tablet works is by using the mytobii as a mouse and allowing the user to focus their eyes in different areas on the screen to make a choice. The browser percives this action as a simple mouse "hoover" over a block or button. Since the mytobii is not very persise it is adviced to make these buttons oversized and keep the options limited. For example if we have a game with "left" "right" "shoot" buttons we could establiche them in this way:
 
   ![buttons](images/buttons.png)
 
