@@ -37,7 +37,7 @@
 ROS2 (much like many opesource open-source frameworks) is simplest to install and use in Linux operating systems. 
 It is possible to install and use ROS2 on WIndows and Mac OS enviroments. In fact there are tutorials from the official ROS documentation such as [ROS2 for MAC](https://docs.ros.org/en/crystal/Installation/macOS-Install-Binary.html) and [ROS2 for Windows](https://docs.ros.org/en/crystal/Installation/Windows-Install-Binary.html) that you can follow. Additionally if you already have ROS2 installed in your working enviroment there is no reason to add any extra virtual enviroments and you can skip this step entierly. Though for begginer users we are recomending to have a UBUNTU instalation or a Virtual Machine (VM) as it will be cleaner and easier to manage in the logn-run. For this tutorial we will be using UBUNTU 22. 
 
-Next you will find two short tutorials for installing Virtualbox and setting up your UBUNTU 22 enviroment on Windows and MAC OS.
+Next you will find two short tutorials for installing Virtualbox (or UTM) and setting up your UBUNTU 22 enviroment on Windows and MAC OS.
 
 
 ## Install UBUNTU on VirtualBox on Windows
